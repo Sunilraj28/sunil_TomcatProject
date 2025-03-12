@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUNIL FITNESS CLUB</title>
+    <title>My Gym</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,6 +16,10 @@
             color: white;
             padding: 20px 0;
             text-align: center;
+        }
+        header img {
+            width: 200px; /* Logo size */
+            margin-bottom: 20px;
         }
         nav {
             background-color: #444;
@@ -87,8 +91,9 @@
 <body>
     <!-- Header Section -->
     <header>
-        <h1>Welcome to My Gym</h1>
-        <p>Get Fit, Stay Healthy, Live Better</p>
+        <img src="gym-logo.png" alt="Gym Logo">
+        <h1>Welcome to [SUNIL FITNESS CLUB]</h1>
+        <p>Your fitness journey starts here!</p>
     </header>
 
     <!-- Navigation Menu -->
@@ -108,62 +113,26 @@
             <p>At My Gym, we provide top-quality fitness training and wellness services to help you achieve your fitness goals. Whether you're looking to lose weight, build strength, or improve flexibility, we have the right programs for you.</p>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a team of certified trainers and fitness enthusiasts committed to making fitness accessible and enjoyable for everyone. Our gym is equipped with state-of-the-art facilities and offers a variety of fitness programs to suit all levels.</p>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services">
-            <h2>Our Classes</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Yoga</h3>
-                    <p>Relax, stretch, and improve flexibility with our Yoga classes. Suitable for all levels.</p>
-                </div>
-                <div class="service">
-                    <h3>Cardio</h3>
-                    <p>Get your heart pumping with intense cardio workouts designed to burn fat and improve endurance.</p>
-                </div>
-                <div class="service">
-                    <h3>Strength Training</h3>
-                    <p>Build muscle and strength with our comprehensive weight training programs.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Trainers Section -->
         <section id="trainers">
             <h2>Meet Our Trainers</h2>
             <div class="trainers">
                 <div class="trainer">
-                    <img src="trainer1.jpg" alt="Trainer 1">
+                    <img src="trainer1.jpg" alt="Trainer John">
                     <h3>John Doe</h3>
-                    <p>Expert in strength training and bodybuilding. Helping clients achieve their muscle-building goals.</p>
+                    <p>Expert in strength training and bodybuilding.</p>
                 </div>
                 <div class="trainer">
-                    <img src="trainer2.jpg" alt="Trainer 2">
+                    <img src="trainer2.jpg" alt="Trainer Jane">
                     <h3>Jane Smith</h3>
-                    <p>Certified yoga instructor focused on flexibility, balance, and mindfulness.</p>
+                    <p>Certified yoga instructor focused on flexibility and mindfulness.</p>
                 </div>
                 <div class="trainer">
-                    <img src="trainer3.jpg" alt="Trainer 3">
+                    <img src="trainer3.jpg" alt="Trainer Mike">
                     <h3>Michael Lee</h3>
-                    <p>Cardio fitness coach specializing in high-intensity interval training (HIIT) and endurance training.</p>
+                    <p>Cardio fitness coach specializing in HIIT and endurance training.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Contact Us Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="SUNIL RAJ" required>
-                <input type="email" placeholder="sunilrajpolampalli@gmail.com" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
         </section>
     </main>
 
