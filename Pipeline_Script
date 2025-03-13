@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Cloning the Git Account ') {
+            steps {
+                echo 'Cloning source code'
+				git branch: 'main', url: 'https://github.com/Sunilraj28/sunil_TomcatProject.git'
+            }
+        }
+		
+		stage('Building tool') {
+            steps {
+                echo 'Building artifact with maven tool'
+				sh 'mvn clean install'
+            }
+        }
+		
+		stage('Deploying code ') {
+            steps {
+                echo 'Deploying code into tomcat'
+				deploy adapters: [tomcat9(credentialsId: 'tom', path: '', url: 'http://ec2-34-228-77-125.compute-1.amazonaws.com:8080/')], contextPath: 'Mygym', onFailure: false, war: '**/*.war'
+            }
+        }
+    }
+}
