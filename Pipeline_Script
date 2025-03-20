@@ -19,7 +19,7 @@ pipeline {
 		stage('Deploying code ') {
             steps {
                 echo 'Deploying code into tomcat'
-				deploy adapters: [tomcat9(credentialsId: 'tom', path: '', url: 'http://ec2-98-82-15-167.compute-1.amazonaws.com:8081/')], contextPath: 'Mygym', onFailure: false, war: '**/*.war'
+				deploy adapters: [tomcat9(credentialsId: 'tom', path: '', url: 'http://ec2-44-211-137-212.compute-1.amazonaws.com:8080/')], contextPath: 'Mygym', onFailure: false, war: '**/*.war'
             }
         }
     }
