@@ -1,7 +1,7 @@
 pipeline {
     agent any
 	tools {
-	maven 'maven-3.9.9'
+	maven 'maven_3.9.9'
 	}
     stages {
         stage('Cloning the Git Account ') {
@@ -21,7 +21,7 @@ pipeline {
 		stage('Deploying code ') {
             steps {
                 echo 'Deploying code into tomcat'
-				deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://44.211.137.212:8080/')], contextPath: 'MyGym', war: '**/*.war'
+				deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://ec2-54-227-46-114.compute-1.amazonaws.com:8082/')], contextPath: 'MyGym', war: '**/*.war'
             }
         }
     }
